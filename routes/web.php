@@ -22,7 +22,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
     Route::group(['middleware' => ['auth']], function() {
         Route::get('/', 'HomeController@index')->name('home.index');
         //LOGOUT
-        Route::get('/logout', 'LogoutController@logout')->name('logout');
+        Route::get('/logout', 'LogoutController@logout')->name('logout.logout');
     });
 });
 
